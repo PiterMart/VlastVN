@@ -55,13 +55,13 @@ define gui.interface_text_color = '#ffffff'
 ## Fonts and Font Sizes ########################################################
 
 ## The font used for in-game text.
-define gui.text_font = "Monospace.tff"
+define gui.text_font = "ZELDADXT.TTF"
 
 ## The font used for character names.
-define gui.name_text_font = "DejaVuSans.ttf"
+define gui.name_text_font = "KAYCYYSERIF.otf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "DejaVuSans.ttf"
+define gui.interface_text_font = "ZX-SPECTRUM.TTF"
 
 ## The size of normal dialogue text.
 define gui.text_size = 33
