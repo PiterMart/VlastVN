@@ -1,10 +1,10 @@
-﻿# The script of the game goes in this file.
+# The script of the game goes in this file.
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
-
+define o = Character("OX")
+define y = Character("YX")
 
 # The game starts here.
 
@@ -24,10 +24,8 @@ label start:
 
     # These display lines of dialogue.
 
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
-
+    o "the real ones"
+    y "(and i really like "/ these ones "/."
     # This ends the game.
 
     return
