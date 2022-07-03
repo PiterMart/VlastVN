@@ -25,7 +25,7 @@ label start:
     # These display lines of dialogue.
 
     o "the real ones"
-    y "(and i really like "/ these ones "/."
+    y "and i really like the real ones"
     # This ends the game.
 
     return
