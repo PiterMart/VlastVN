@@ -1,22 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 47, in script
-    start music "audio/intro-story.mp3"
-Exception: Sayer 'start' is not defined.
+  File "game/script.rpy", line 153, in script
+    play muisic "audio/megastructure1.mp3"
+  File "renpy/common/000statements.rpy", line 123, in execute_play_music
+    renpy.music.play(_audio_eval(p["file"]),
+Exception: Audio channel 'muisic' is unknown.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 47, in script
-    start music "audio/intro-story.mp3"
-  File "D:\PROGRAMAS\renpy\renpy-8.0.0-sdk\renpy\ast.py", line 861, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "D:\PROGRAMAS\renpy\renpy-8.0.0-sdk\renpy\ast.py", line 754, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'start' is not defined.
+  File "game/script.rpy", line 153, in script
+    play muisic "audio/megastructure1.mp3"
+  File "D:\PROGRAMAS\renpy\renpy-8.0.0-sdk\renpy\ast.py", line 2212, in execute
+    self.call("execute")
+  File "D:\PROGRAMAS\renpy\renpy-8.0.0-sdk\renpy\ast.py", line 2200, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "D:\PROGRAMAS\renpy\renpy-8.0.0-sdk\renpy\statements.py", line 281, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 123, in execute_play_music
+    renpy.music.play(_audio_eval(p["file"]),
+  File "D:\PROGRAMAS\renpy\renpy-8.0.0-sdk\renpy\audio\music.py", line 103, in play
+    c = get_channel(channel)
+  File "D:\PROGRAMAS\renpy\renpy-8.0.0-sdk\renpy\audio\audio.py", line 915, in get_channel
+    raise Exception("Audio channel %r is unknown." % name)
+Exception: Audio channel 'muisic' is unknown.
 
 Windows-10-10.0.18362 AMD64
 Ren'Py 8.0.0.22062402
 VlastVN 1.0
-Sun Jul  3 20:48:11 2022
+Mon Jul  4 01:25:10 2022
