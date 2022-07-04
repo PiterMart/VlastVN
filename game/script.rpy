@@ -5,7 +5,7 @@ define o = Character("OX" )
 
 # YX RELATED FILES
 
-image yx = "images/characters/test/test2.png"
+image yx = "images/characters/YX/YX_idle.png"
 image yx angry = "images/characters/test/test2 angry.png"
 
 define y = Character("YX")
@@ -19,7 +19,7 @@ image dr hikori = "images/characters/test/dr.png"
 label start:
 
     scene bg blame-site
-    # play music "audio/04. Sorry about my face - I mustn't forget to delete this.flac"
+    play music "audio/megastructure1.mp3"
 
    
     show ox 
@@ -43,6 +43,9 @@ label start:
 
     y "Here we are, finally..."
 
+    stop music
+    play music "audio/intro-story.mp3"
+
     scene bg world-scene
 
     "Its the year 3633"
@@ -65,7 +68,11 @@ label start:
 
     "The only thing still standing, is humanity's factory"
 
+    stop music
+
     # scene starting place
+
+    play music "audio/megastructure1.mp3"
 
     scene bg wall-megastructure
 
