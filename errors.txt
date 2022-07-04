@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 49: expected statement.
-    shw ox at right
-           ^
+File "game/script.rpy", line 293: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+    "
 
 Ren'Py Version: Ren'Py 8.0.0.22062402
-Mon Jul  4 00:08:56 2022
+Mon Jul  4 17:23:20 2022
