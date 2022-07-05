@@ -10,6 +10,7 @@ image yx = "images/characters/YX/YX_idle.png"
 image side yx = "images/characters/YX/side_YX.png"
 image yx angry = "images/characters/test/test2 angry.png"
 image yx carry = "images/characters/YX/YX_carrying_OX.png"
+image yx ox formation = "images/characters/YX/yx_ox_formation.png"
 
 define y = Character("Yuudachi", image= "yx")
 
@@ -24,6 +25,7 @@ image side tr = "images/characters/tiny robot/robot_profile.png"
 define s = Character("Sentry", image="s")
 image s = "images/characters/sentrys/sentrys.png"
 image side s = "images/characters/sentrys/profile_sentry.png"
+image s ded = "images/characters/sentrys/sentry-ded.png"
 
 
 # DR HIKORI FILES
@@ -90,7 +92,7 @@ label start:
     "Robots..."
     "A whole ecosystem of them... Working hard to make all what humanity needs to conquer the galaxy."
 
-    sceme bg earth
+    scene bg earth
     with fade
 
     "The planet wich gave birth to them"
@@ -109,12 +111,12 @@ label start:
 
     # scene of the megastructure in the apocalypse
 
-    scene bg factory-from-space
+    scene bg megastructure-inside
     with fade
 
     "The only thing still standing, is humanity's factory."
     "Built as a huge faraday cage."
-    "Preserving humanity's biggest factory."
+    "Preserving the true esscence of humanity ."
 
     stop music
     pause 3
@@ -169,7 +171,6 @@ label start:
     y "Now you see it?"
 
     o "Well... I guess?"
-    o "Sometimes I wonder how can you forget i haven't got a sismic sensor like you."
     o "What now? is it just a hollow wall? Whats on the other side?"
 
     #Robot appears in the hole
@@ -208,7 +209,7 @@ label start:
     tr "That seems unlikeley"
     tr "Im unable to detect an id in any of you advanced models."
 
-    y "Listen, we are searching for a specific human within this walls."
+    y "Listen, we are searching for a specific human.."
     y "A scientist"
     y "He stole some data and hid within the walls of this factory"
     y "Can you tell us where he is?"
@@ -234,18 +235,19 @@ label start:
 
     # y sad
 
-    y "Im not a very good detective"
+    y "Im not very good at interrogations"
 
     o "Maybe not, but me... "
     o "I would've never been able to even scratch the surface of that wall."
 
     y "Whats that worth if i cant process the information..."
+    y "You also realize, im just a fancy wrecking machine..."
 
-    o "Hear, next time let me do tha talking, maybe i can persuade this low capability robots"
+    o "Hear me, next time let me do the talking, maybe i can persuade this low mem robots"
 
-    y "sight... low capabilities.."
+    y "sight... low mem robots..."
 
-    o " come on dont over process it, lets keep going."
+    o "Come on dont over process it, lets keep going."
     
     hide ox
     hide yx
@@ -265,59 +267,131 @@ label start:
     show yx at center
     with fade
 
-    y "Wait a second, my sound receptors are sensing something."
+    y "Wait..."
+    y "im sensing some movement"
 
-    o "Ok let me hear."
+    o "What is it?"
 
-    y "Don't worry, I got this."
+    y "I dont know"
+    y "But"
+    y "It isn't very big anyway"
 
-    o "Let me hear, it's an order."
+    o "Let me analyze the signals"
 
     y "…"
 
-    o "I don't know why I even ask."
+    o "Come on, dont be so pridefull"   
+    o "I can make some estimations, and we'll be more shure..."
+
+    y "Nevermind, it stoped"
+
+    o "Well then... lets continue, we are loosing time."
+
+    y "No sorry, there it is again"
+    y "But what is it?"
+
+    o "That's it, I'm connecting to your database."
+    o "Whether you lilke it or not... "
+
+    y "OK... do it then..."
+    y "DATABASE PERMISSIONS UPDATED"
+    y "You better be carefull whith those files"
 
 
+    o "Lets see what we got here..."
+    o "..."
+    pause 2
+    o "They are security sentrys most likeley"
+    o "They seem to have stopped for a reason"
 
-    y "They flew by, probably security sentries.
-    … Wait, there it is again."
+    y "Ohh, so they where sentrys"
+    y "I knew it all along"
 
-    o "That's it, I'm connecting to your receptors as well."
+    o "shure thing..."
 
-    y "whatever…
-"
-    o "CALCULATING DISTANCE. Lets go, we have to leave. They are coming at us."
+    y "Lets see where they are hiding"
 
-    y "I don't belive they are…"
+    o "How are you going to do that?"
 
-    o "come on lets go! Lets get out of here.."
+    y "Just watch"
+    #sonar sound
+    play audio "audio/SONAR.mp3"
+    y "*Emits a sound that echoes through the megastructure*"
+
+    o "WHAT ARE YOU DOING??"
+    o "HAVE YOU GONE NUTS?"
+
+    y "HEY DONT SHOUT AT ME!"
+    y "LOOK THERE THEY ARE!"
+
+    o "YES AND NOW THEY ARE CLEARLY COMING AT US!"
+    
+    y "I don't belive they are..."
+
+    o "COME ON! WE HAVE TO GO!"
 
     stop music
 
     #silence
 
-    y "Oh, now i see.."
+    y "Oh, you're right..."
 
     #sentrys coming
 
     play audio "audio/sentrys.mp3"
+    play music "audio/megastructure1.mp3"
+    show s at left
 
     "Two flying security sentries blast thru a ventilation hatch above the OXYX"
 
-    show s at left
 
-    s "Stop Where you are, you are trespassing ZEHNKR facilities. Shut down your systems immediately or you will be shot."
+    s "ALERT ALERT"
+    s "STOP WHERE YOU ARE AND PROCEED TO SHUTDOWN"
+
+    y "Ups..."
+
+    s "ITS AN ORDER, SHUTDOWN YOUR SYSTEMS OR YOU WILL BE HARMED"
 
 
-    o "Defense formation, NOW!"
+    o "YUUDACHI!"
+
+    "Yuudachi jumps in front of Ooshi"
+    
+    y "Dont worry I wont let them harm you"
+
+    o "Wait, my system is telling me to jump on your back"
+
+    y "On my back?"
+
+    s "LAST WARNING, SHUTDOWN YOUR SYSTEMS NOW!"
+
+    play sound "audio/assembly.mp3"
+    hide ox
+    hide yx
+    show yx ox formation
+    with fade
+
+    "Ooshi jumps on Yuudachi's back and attaches to it perfectly"
+    pause 4
+    y "COMBAT FORMATION ENGAGED"
+
+    o "ACTION CALCULATED, SUCCES PROBABILITY 89 %% "
+    
+    y "EXECUTING"
 
 
     #fighting
+    play audio "audio/fight sentrys.mp3"
+    "Using this formation Yuudachi and Ooshi move as one unit. Dodging and calculating at insane rates"
+
+    show s ded 
+    "In the blink of an eye, the three sentrys are defeated"
 
 
+    hide yx ox formation
 
-
-
+    show ox at right
+    show yx at center
 
     
     #yuri
@@ -346,14 +420,14 @@ label start:
     # yx breast open
     y "OPENING CHARGING DOCKS, INITIALIZING POWER OUTPUTS.. "
 
-    "YX chest opens revealing its insides"
+    "Yuudachi chest opens revealing its insides"
 
     y "Im very vulnerable when im open, we have to be carefull..."
 
     o "*Blushed* It's my first time charging from a model-YX... "
 
     y "Right, haha, let me help you."
-    y "Grabs OX's by the waist and  pushes its belly"
+    y "Grabs Ooshi by the waist and  pushes its belly"
 
     #ah noise
 
@@ -361,72 +435,175 @@ label start:
 
     #yx compartment opens
 
-    "A compartment opens on OX's belly, revealing a female charging plug."
+    "A compartment opens on Ooshis belly, revealing a female charging plug."
 
     y "come closer... dont be shy, the cable isnt very long..."
 
-    "OX aprochaes YX and hugs her"
+    "Ooshi aprochaes Yuudachi and hugs her"
 
     #electricity noise
     #both hugging
 
     "her charging plug magnetically attaches "
 
+
+    o "Amazing..."
+    o "I can feel your energy filling my batteries"
+    o "Oh, sorry i got carried away"
+    o "This... this wont take much longer"
     
-
-    # o "plugin to YX: th- thanks… this will only take 1 minute and 23 seconds."
-
-    # y "In the end, i m just a walking battery."
-
-    # o "You really do think so. After all, you still can t acknowledge your capabilities. Clearly something is wrong with your computing software."
-
-    # y "Oh so you say? Well, then i might not even be a walking battery. SHUTTING DOWN POWER OUTPUTS."
-
-    # o "HEY! What is it with you? "
-
-    # y "WHAT?!"
-
-    # o "its odd for a robot to be this irrational."
-
-    # y "Irrational? Im a dumb piece of metal, my whole purpose is to be a tool for others."
-
-    # o "Don t you realize I think that of myself as well… I get what you re saying.."
-
-    # y "..INITIALIZING POWER OUTPUTS. Let s just get this over with."
-
-    # o "There s only 23% remaining."
+    y "Dont worry, its my first time aswell"
+    y "And it does feel amazing"
 
 
-    #walking to the wlevator images
 
 
-    y "I'm sensing a movement north from our position. Its something really big.."
+    stop music
+    play music "audio/wind2.mp3"
+    bg site-2
 
-    o "We have to reach the mainframe of the factory and get access to the structural blueprints."
 
-    Y "And how is it that you plan on doing that.."
+    o "Well im feeling better than ever!"
+    o "I can see clearly now"
+    o "Our best option is to reach the core interface link of the factory"
+    o "It has to be somewhere"
 
-    o "Not with that attitude to begin with."
+    y "Sounds like a great plan"
+    y "But.."
+    y "How are we going to do it exactly?"
 
-    y "OK."
+    o "Well, everything must be connected to it"
+    o "So we just have to go against the energy flow"
+    o "Maybe theres something you can do to guide us"
 
-    o "If we want to finish this mission, you better start trusting me."
+    y "I guess i could..."
+    y "Emmm...."
+    y "Well i could..."
+    y "Oh i know!, I can use the sonar and..."
 
-    y "Do i have any other options?"
+    o "Dont you even dare, hahaha"
+    o "Let me check your documentation"
+    o "Hmm..."
+    o "It says you can sense electromagnetic waves with the antenas on your neck"
 
-    o "Acting like a jerk."
+    y "Ohh, that makes sense now..."
 
-    y "don't push it…"
+    o "What makes sense?"
 
-    O "give me access to your scans."
+    y "Back where i charged you"
+    y "They didnt stop tingling"
 
-    y "sight . DATABASE PERMISSIONS UPDATED. I can't believe im doing this."
+    o "*Blushes*"
 
-    O "There! it seems to be 3.4 km from here. There was a 0.3km displacement of an approximately 500 square meters object. My guess is its some kind of heavy duty elevator. And something has to control it. Lets see it for ourselves."
+    y "Well there isn't much energy going on here"
+    y "But I think i can sense a very subtle sism"
+    
+    o "Let me check"
+    pause 3
 
-    y "Whatever you say, big brain. "
+    o "it seems to be 3.4 km from here.."
+    o "My guess is its some kind of heavy duty elevator"
+    o "That has to give us a clue"
 
-    O "Come on, let's keep moving forward there s no time to waste."
+    y "Do you think the elevator is near the core interface link?"
+
+    o "I dont know but it will probably have a big energy consuption"
+    o "Im shure that you will be able to track its origin once we are there"
+
+    y "I guess you are right"
+    y "Makes me feel usefull for once"
+
+    o "What do you mean?"
+    o "After all you've done for the mission."
+    o "For me.."
+    o "You still can't see how usefull you are?"
+
+    y "Sorry you are right"
+    y "Maybe its my stupidity wich doesn't let me acknowledge my capabilities"
+    y "Thank you..."
+    y "You really make me feel better..."
+
+    o "Dont even mention it, you saved me back there"
+    o "Im in debt"
+
+    y "No you aren't"
+    y "It was part of the mission, you silly"
+
+    o "Come on, lets get to the elevator"
+
+    stop music
+    pause 5
+
+    #Elevator scene
+
+    play music "audio/dark-wind.mp3"
+    scene bg elevator
+
+
+    y "So here it is"
+
+    o "This place is massive"
+
+    y "Its so quiet..."
+
+    o "Indeed it is, even for me..."
+
+    y "Let me scan this place and see if theres a way to reach its powerlines"
+
+    #scanner sound
+
+    "Yuudachi's eyes glow red. They proyect a laser scanner so strong that it reaches all the walls of the elevator"
+
+    y "Do you mind checking the scans?"
+    y "Im shure you can make more sense out of them"
+
+    o "Im glad you asked"
+    o "Lets see..."
+    pause 3
+    o "It seems that the doors of the elevator are in each end"
+    o "But they are tightly sealed now"
+    o "Wait..."
+    o "Whats that?"
+
+    y "What? What is it?"
+
+    o "There's something on the wall infront of us"
+    o "Some kind of tube"
+    
+    y "Whats strange about a tube?"
+    y "This place is filled with those"
+
+    o "The strange thing is, its blurred"
+    o "Wich means it moved while you here scanning it"
+
+    y "Moved?"
+    y "Must be the wind"
+
+    o "I dont think it was"
+    o "Aren't you sensing something now?"
+
+    y "No, wait"
+    y "Let me switch to my sismic sens..."
+
+    # worm  worm sound
+
+    "A giant mechanical worm emerges form the darkness ahead of them"
+
+    y "Now what is that?!"
+
+    o "I dont know what it is, but it doesn't seem friendly at all"
+    o "Quick lets get into formation"
+
+    play sound "audio/assembly.mp3"
+    hide ox
+    hide yx
+    show yx ox formation
+    with fade
+
+
+
+
+
 
 
 

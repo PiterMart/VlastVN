@@ -1,22 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 350, in script
-    Y "And how is it that you plan on doing that.."
-Exception: Sayer 'Y' is not defined.
+  File "game/script.rpy", line 378, in script
+    o "ACTION CALCULATED, SUCCES PROBABILITY 89 % "
+ValueError: incomplete format
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 350, in script
-    Y "And how is it that you plan on doing that.."
-  File "D:\PROGRAMAS\renpy\renpy-8.0.0-sdk\renpy\ast.py", line 861, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "D:\PROGRAMAS\renpy\renpy-8.0.0-sdk\renpy\ast.py", line 754, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'Y' is not defined.
+  File "game/script.rpy", line 378, in script
+    o "ACTION CALCULATED, SUCCES PROBABILITY 89 % "
+  File "D:\PROGRAMAS\renpy\renpy-8.0.0-sdk\renpy\ast.py", line 901, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\PROGRAMAS\renpy\renpy-8.0.0-sdk\renpy\exports.py", line 1362, in say
+    what = what % tag_quoting_dict
+ValueError: incomplete format
 
 Windows-10-10.0.18362 AMD64
 Ren'Py 8.0.0.22062402
 VlastVN 1.0
-Mon Jul  4 18:46:52 2022
+Tue Jul  5 01:15:55 2022
