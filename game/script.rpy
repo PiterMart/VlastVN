@@ -51,7 +51,7 @@ label start:
 
     y "It was time for you to reboot. I was starting to worry."
 
-    o "Whats... whats with all this corrupt files in my memory...?"
+    o "Whats... whats with all these corrupt files in my memory...?"
 
     hide ox
     hide yx
@@ -68,7 +68,7 @@ label start:
 
     "Its the year 3633"
     "Earth is no longer how it used to be..."
-    "There is no more water in its soil..."
+    "Theres no more water in its soil..."
     "There are no more species, just a couple humans.."
 
     #scene of last human buildings
@@ -77,7 +77,7 @@ label start:
 
 
 
-    "The ones that stayed to pretend they can manage humanity's factory"
+    "These people stayed to pretend they can manage humanity's factory"
     "Living in tall flats, full of artificial comodities and the latest technologies"
     "Just because of that factory..."
 
@@ -86,8 +86,8 @@ label start:
     scene bg factory-from-space
     with fade
 
-    "The one responsible for the velocity in wich humans killed the earth..."
-    "A 13,000,000 km² hexagonal metal megastructure on the Southest point on earth"
+    "The one responsible for the velocity in which humans killed the earth..."
+    "A 13,000,000 km² hexagonal metal megastructure on the Southernmost point on earth"
     "And whats inside?"
     "Robots..."
     "A whole ecosystem of them... Working hard to make all what humanity needs to conquer the galaxy."
@@ -105,8 +105,8 @@ label start:
     scene bg apocalypse
     with fade
 
-    "The ozone layer is crackling with the flares of the biggest sun storm the solar system has ever experienced."
-    "The whole earth's surface is erupting with flames."
+    "The ozone layer is crackling with the flares of the biggest sun storms the solar system had ever experienced."
+    "Earth's surface is erupting with flames."
     "The inevitable end is now upon it..."
 
     # scene of the megastructure in the apocalypse
@@ -116,7 +116,7 @@ label start:
 
     "The only thing still standing, is humanity's factory."
     "Built as a huge faraday cage."
-    "Preserving the true esscence of humanity ."
+    "Preserving the true esscence of humanity."
 
     stop music
     pause 3
@@ -166,7 +166,7 @@ label start:
     show yx at right
     show ox at left
 
-    y " * Punches a hole threw the wall *"
+    y " * Punches a hole through the wall *"
     pause 3
     y "Now you see it?"
 
@@ -188,7 +188,7 @@ label start:
     y "I sensed your vibrations and wanted to ask you something"
 
     tr "Strange... That doesnt seem as a regular protocol"
-    tr "Im never supposed to leave the fuel deposit."
+    tr "Im supposed to never leave the fuel deposit."
     tr "I should send a report about this"
 
     o "*whispering* That doesn't sound very friendly"
@@ -206,7 +206,7 @@ label start:
 
     o "Its because this is a very important test that requires no previous knowledge for it to work"
 
-    tr "That seems unlikeley"
+    tr "That seems unlikely"
     tr "Im unable to detect an id in any of you advanced models."
 
     y "Listen, we are searching for a specific human.."
@@ -245,7 +245,7 @@ label start:
 
     o "Hear me, next time let me do the talking, maybe i can persuade this low mem robots"
 
-    y "sight... low mem robots..."
+    y "sigh... low mem robots..."
 
     o "Come on dont over process it, lets keep going."
     
@@ -280,34 +280,34 @@ label start:
 
     y "…"
 
-    o "Come on, dont be so pridefull"   
-    o "I can make some estimations, and we'll be more shure..."
+    o "Come on, dont be so prideful"   
+    o "I can make some estimations, and we'll be more sure..."
 
     y "Nevermind, it stoped"
 
-    o "Well then... lets continue, we are loosing time."
+    o "Well then... lets continue, we are losing time."
 
     y "No sorry, there it is again"
     y "But what is it?"
 
     o "That's it, I'm connecting to your database."
-    o "Whether you lilke it or not... "
+    o "Whether you like it or not... "
 
     y "OK... do it then..."
     y "DATABASE PERMISSIONS UPDATED"
-    y "You better be carefull whith those files"
+    y "You better be careful whith those files"
 
 
     o "Lets see what we got here..."
     o "..."
     pause 2
-    o "They are security sentrys most likeley"
+    o "They are security sentries most likeley"
     o "They seem to have stopped for a reason"
 
-    y "Ohh, so they where sentrys"
+    y "Ohh, so they where sentries"
     y "I knew it all along"
 
-    o "shure thing..."
+    o "sure thing..."
 
     y "Lets see where they are hiding"
 
@@ -348,7 +348,7 @@ label start:
     s "ALERT ALERT"
     s "STOP WHERE YOU ARE AND PROCEED TO SHUTDOWN"
 
-    y "Ups..."
+    y "oops..."
 
     s "ITS AN ORDER, SHUTDOWN YOUR SYSTEMS OR YOU WILL BE HARMED"
 
@@ -375,7 +375,7 @@ label start:
     pause 4
     y "COMBAT FORMATION ENGAGED"
 
-    o "ACTION CALCULATED, SUCCES PROBABILITY 89 %% "
+    o "ACTION CALCULATED, SUCCESS PROBABILITY 89 %% "
     
     y "EXECUTING"
 
@@ -385,7 +385,7 @@ label start:
     "Using this formation Yuudachi and Ooshi move as one unit. Dodging and calculating at insane rates"
 
     show s ded 
-    "In the blink of an eye, the three sentrys are defeated"
+    "In the blink of an eye, the three sentries are defeated"
 
 
     hide yx ox formation
@@ -420,14 +420,14 @@ label start:
     # yx breast open
     y "OPENING CHARGING DOCKS, INITIALIZING POWER OUTPUTS.. "
 
-    "Yuudachi chest opens revealing its insides"
+    "Yuudachis chest opens revealing her insides"
 
-    y "Im very vulnerable when im open, we have to be carefull..."
+    y "Im very vulnerable when im open, we have to be careful..."
 
     o "*Blushed* It's my first time charging from a model-YX... "
 
     y "Right, haha, let me help you."
-    y "Grabs Ooshi by the waist and  pushes its belly"
+    y "Grabs Ooshi by the waist and pushes her belly"
 
     #ah noise
 
@@ -484,7 +484,7 @@ label start:
     o "Dont you even dare, hahaha"
     o "Let me check your documentation"
     o "Hmm..."
-    o "It says you can sense electromagnetic waves with the antenas on your neck"
+    o "It says you can sense electromagnetic waves with the antennas on your neck"
 
     y "Ohh, that makes sense now..."
 
@@ -507,19 +507,19 @@ label start:
 
     y "Do you think the elevator is near the core interface link?"
 
-    o "I dont know but it will probably have a big energy consuption"
-    o "Im shure that you will be able to track its origin once we are there"
+    o "I dont know but it will probably have a big energy consumption"
+    o "Im sure that you will be able to track its origin once we are there"
 
     y "I guess you are right"
-    y "Makes me feel usefull for once"
+    y "Makes me feel useful for once"
 
     o "What do you mean?"
     o "After all you've done for the mission."
     o "For me.."
-    o "You still can't see how usefull you are?"
+    o "You still can't see how useful you are?"
 
     y "Sorry you are right"
-    y "Maybe its my stupidity wich doesn't let me acknowledge my capabilities"
+    y "Maybe its my stupidity wich doesn't let me aknowledge my capabilities"
     y "Thank you..."
     y "You really make me feel better..."
 
@@ -555,7 +555,7 @@ label start:
     "Yuudachi's eyes glow red. They proyect a laser scanner so strong that it reaches all the walls of the elevator"
 
     y "Do you mind checking the scans?"
-    y "Im shure you can make more sense out of them"
+    y "Im sure you can make more sense out of them"
 
     o "Im glad you asked"
     o "Lets see..."
