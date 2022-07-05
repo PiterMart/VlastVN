@@ -460,7 +460,7 @@ label start:
 
     stop music
     play music "audio/wind2.mp3"
-    bg site-2
+    scene bg site-2
 
 
     o "Well im feeling better than ever!"

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 93: expected statement.
-    sceme bg earth
-                  ^
+File "game/script.rpy", line 463: expected statement.
+    bg site-2
+             ^
 
 Ren'Py Version: Ren'Py 8.0.0.22062402
-Tue Jul  5 01:00:36 2022
+Tue Jul  5 03:23:56 2022
